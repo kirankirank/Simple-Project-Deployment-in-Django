@@ -73,5 +73,10 @@
 
 
 •	Type the commend in the commend prompt : python .\manage.py runserver (you will get the out put)
+
+
+
+
+Out Will Be Look Like
 ![image](https://user-images.githubusercontent.com/46403000/199985095-ed48fc34-77fb-472a-9ab6-bf0b9e88b9e6.png)
 
