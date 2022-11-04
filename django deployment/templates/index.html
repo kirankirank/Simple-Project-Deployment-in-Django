@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+        
+        h1 {text-align: center;}
+        
+       p {text-align: center;}
+       div {text-align: center;}
+       
+        </style>
+
+         <meta charset="UTF-8">
+         <title>Fuel Efficiency Prediction</title>
+         <link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+         <link href='https://fonts.googleapis.com/css?family=Arimo' rel='stylesheet' type='text/css'>
+         <link href='https://fonts.googleapis.com/css?family=Hind:300' rel='stylesheet' type='text/css'>
+         <link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
+         
+    </head>
+    <marquee>Know Your Cars Fuel Efficiency</marquee>
+    <body style="background-color:white;">
+
+        <div class="login">
+            <img src="https://innodatatics.ai/assets/innologo.png">
+        <h1 style="color:red;">Fuel Efficiency Prediction of Cars</h1>
+        <form action="{% url 'result' %}">
+            {% csrf_token %}
+            <label for="df">Engine Type:</label>
+                <select name = "eng">
+                <option value = "petrol" > petrol </option>
+                <option value = "hybrid" > hybrid </option>
+                <option value = "diesel" > diesel </option>
+                <option value = "lpg" > lpg </option>
+                <option value = "cng" > cng </option>
+                </select>
+            
+
+            <br><br>
+            <input type ="text" name = "hp" placeholder="HP (range: 49 - 322)"/>
+            <br><br>
+            <input type ="text" name = "vol" placeholder="VOL (range: 50 - 160)"/>
+            <br><br>
+            <input type ="text" name = "sp" placeholder="SP (range: 99.5 - 169.5)"/>
+            <br><br>
+            <input type ="text" name = "wt" placeholder="WT (range: 16 - 52)"/>
+            
+            
+            <p>
+            
+            
+            
+            </p>
+            <P><input type = "submit" value = "submit"/></p>
+        </form>
+        
+        <p>The Result Is {{y}}</p>
+        
+
+            </div>
+    </body>
+</html>   
